@@ -1,0 +1,26 @@
+{% extends "_layout.html" %}
+{% block title %}{{ product.name }} · Sweet Delights{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <section class="product-detail">
+      <img
+        src="{{ url_for('static', filename='images/' ~ product.image) }}"
+        alt="{{ product.name }}"
+        class="detail-image"
+      />
+      <div class="detail-info">
+        <h2>{{ product.name }}</h2>
+        <p class="price-big">€{{ "%.2f"|format(product.price) }}</p>
+        <p class="desc">{{ product.description }}</p>
+        <a
+          href="{{ url_for('cart.add_item') }}?id={{ product.id }}"
+          class="btn btn-primary btn-lg"
+        >
+          <i class="fas fa-cart-plus"></i> Add to Cart
+          <span class="cart-badge inline">{{ cart_size }}</span>
+        </a>
+      </div>
+    </section>
+  </div>
+{% endblock %}

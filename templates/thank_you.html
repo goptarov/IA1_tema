@@ -1,0 +1,26 @@
+{% extends "_layout.html" %}
+{% block title %}Thanks!{% endblock %}
+
+{% block content %}
+<div class="text-center py-5">
+  <h2 class="display-6 mb-3">Thank you, {{ order.full_name }}!</h2>
+  <p class="mb-4">Your treats are on their way 🧁</p>
+  <p class="mb-4">We've sent a confirmation email to {{ order.email }}</p>
+
+  <div class="card mx-auto" style="max-width:500px">
+    <ul class="list-group list-group-flush">
+      {% for line in items %}
+      <li class="list-group-item d-flex justify-content-between">
+        {{ line.product.name }} × {{ line.quantity }}
+        <span>€ {{ "%.2f"|format(line.subtotal) }}</span>
+      </li>
+      {% endfor %}
+      <li class="list-group-item d-flex justify-content-between">
+        <strong>Total</strong><strong>€ {{ "%.2f"|format(order.total) }}</strong>
+      </li>
+    </ul>
+  </div>
+
+  <a href="{{ url_for('index.index_page') }}" class="btn-dessert mt-4">Back to Shop</a>
+</div>
+{% endblock %}

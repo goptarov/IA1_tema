@@ -1,0 +1,1 @@
+For login use mail: "user@example.com" and password: "coolpass".

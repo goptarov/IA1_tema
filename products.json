@@ -1,0 +1,114 @@
+[
+  {
+    "id": "c1",
+    "name": "Cheesecake",
+    "price": 12.90,
+    "image": "cheesecake.webp",
+    "description": "The famous cream-cheese filled cake. 1.5kg"
+  },
+  {
+    "id": "c2",
+    "name": "Raspberry Macarons",
+    "price": 4.90,
+    "image": "strawberryMacarons.webp",
+    "description": "Delicate almond shells with raspberry buttercream. 6 pieces"
+  },
+  {
+    "id": "c3",
+    "name": "Tiramisu",
+    "price": 7.90,
+    "image": "tiramisu.webp",
+    "description": "Italian delicacy with moist ladyfingers and mascarpone cream. The best of the best. 500g"
+  },
+  {
+    "id": "c4",
+    "name": "Chocolate Cake",
+    "price": 16.90,
+    "image": "chocolate-cake.webp",
+    "description": "The classic chocolate cake. 2kg"
+  },
+  {
+    "id": "c5",
+    "name": "Red Velvet Cake",
+    "price": 15.50,
+    "image": "red-velvet.webp",
+    "description": "Moist cocoa sponge with cream-cheese frosting. 2kg"
+  },
+  {
+    "id": "c6",
+    "name": "Brownies",
+    "price": 4.90,
+    "image": "brownie.webp",
+    "description": "Chocolatey and fudgy dessert. 400g"
+  },
+  {
+    "id": "c7",
+    "name": "Carrot Cake",
+    "price": 18.90,
+    "image": "carrot-cake.webp",
+    "description": "A cake containing carrot and creamy frosting. 2kg"
+  },
+  {
+    "id": "c8",
+    "name": "Amandine",
+    "price": 3.90,
+    "image": "amandina.webp",
+    "description": "Famout romanian chocolate dessert. 150g"
+  },
+  {
+    "id": "c9",
+    "name": "Alba Ca Zapada",
+    "price": 2.90,
+    "image": "alba-ca-zapada.webp",
+    "description": "A light and fluffy romanian lemon flavoured cake. 150g"
+  },
+  {
+    "id": "c10",
+    "name": "Black Forest Cake",
+    "price": 19.90,
+    "image": "black-forest-cake.webp",
+    "description": "A rich german cake made with Kirsch schnapps, whipped cream and cherries. 2kg"
+  },
+  {
+    "id": "c11",
+    "name": "Crème brûlée",
+    "price": 5.90,
+    "image": "creme-brulee.webp",
+    "description": "Rich french custard topped with caramelized sugar. 200g"
+  },
+  {
+    "id": "c12",
+    "name": "Pumpkin Pie",
+    "price": 7.90,
+    "image": "pumpkin-pie.webp",
+    "description": "A tart with rich pumpkin custard, topped with whipped cream and cinnamon. 150g"
+  },
+  {
+    "id": "c13",
+    "name": "Chocolate Chip Cookies",
+    "price": 5.90,
+    "image": "cookies.webp",
+    "description": "Soft and chewy chocolate chip cookies. 6 pieces"
+  },
+  {
+    "id": "c14",
+    "name": "Chocolate Terrine",
+    "price": 6.90,
+    "image": "chocolate-terrine.webp",
+    "description": "Dark and creamy chocolate dessert. 500g"
+  },
+  {
+    "id": "c15",
+    "name": "Bûche De Noël",
+    "price": 17.90,
+    "image": "log-cake.webp",
+    "description": "French traditional Christmas cake decorated to resemble a log. 2kg"
+  },
+  {
+    "id": "c16",
+    "name": "Baklava",
+    "price": 3.90,
+    "image": "baclava.webp",
+    "description": "Turkish traditional dessert made with thin sheets of dough and crushed pistachio imbued with syrup. 4 pieces"
+  }
+]

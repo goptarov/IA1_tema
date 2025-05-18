@@ -1,0 +1,34 @@
+{% extends "_layout.html" %}
+{% block title %}Home · Sweet Moments{% endblock %}
+
+{% block content %}
+  <!-- hero stays full-width -->
+  <section class="hero">
+    <h2 class="hero-text h1">Enjoy our finests desserts</h2>
+  </section>
+
+  <!-- wrap your treats in a centered container -->
+  <div class="container">
+    <section id="today" class="products-section">
+      <h2 class="section-title">Today’s Treats</h2>
+      <div class="grid">
+        {% for p in products %}
+          <article class="card hover-lift">
+            <a href="{{ url_for('product.show_product', pid=p.id) }}">
+              <img
+                src="{{ url_for('static', filename='images/' ~ p.image) }}"
+                alt="{{ p.name }}"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h3>{{ p.name }}</h3>
+                <p>{{ p.description }}</p>
+                <span class="price">€{{ '%.2f'|format(p.price) }}</span>
+              </div>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+{% endblock %}
