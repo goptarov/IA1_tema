@@ -9,7 +9,9 @@ COPY requirements.txt /app/
 
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-COPY . /app/
+COPY . /app
+
+RUN touch /orders.json \ && chmod 666 /orders.json
 
 EXPOSE 5000
 
