@@ -56,10 +56,10 @@ def checkout():
     full_name = request.form.get('full_name', '').strip()
     email     = request.form.get('email', '').strip()
     address   = request.form.get('address', '').strip()
-    city      = request.form.get('city', '').strip()
-    zip_code  = request.form.get('zip_code', '').strip()
+    phone      = request.form.get('phone', '').strip()
+    payment_method  = request.form.get('payment_method', '').strip()
 
-    if not (full_name and email and address and city and zip_code):
+    if not (full_name and email and address and phone and payment_method):
         error = "All fields are required."
         return render_template('checkout.html',
                                items=items,
@@ -71,8 +71,8 @@ def checkout():
         'full_name':  full_name,
         'email':      email,
         'address':    address,
-        'city':       city,
-        'zip_code':   zip_code,
+        'phone':       phone,
+        'payment_method':   payment_method,
         'items':      { pid: qty for pid, qty in cart.items() },
         'total':      total
     }
